@@ -1,0 +1,167 @@
+ /* General styling */
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.taxi-fare-calculator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.calculate-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.calculate-btn:hover {
+    background-color: #0056b3;
+}
+
+.fare-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+}
+
+.book-now-btn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.book-now-btn:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px 0px;
+    }
+
+    .taxi-fare-calculator {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    input, select, .calculate-btn, .book-now-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablet Responsiveness */
+@media only screen and (max-width: 768px) {
+    .taxi-fare-calculator {
+        padding: 25px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input, select, .calculate-btn, .book-now-btn {
+        font-size: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
