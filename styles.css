@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    text-decoration: none;
 }
 
 .taxi-fare-calculator {
@@ -27,6 +28,12 @@
     margin-bottom: 10px;
     text-align: center;
 }
+.header a
+    {
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+    }
 
 .header p {
     color: #666;
@@ -135,8 +142,13 @@ input[type="checkbox"] {
         max-width: 100%;
     }
 
-    .header h1 {
+    .header h1{
         font-size: 22px;
+    }
+    .header a h2 
+    {
+        font-size: 22px;
+        text-decoration: none;
     }
 
     input, select, .calculate-btn, .book-now-btn {
