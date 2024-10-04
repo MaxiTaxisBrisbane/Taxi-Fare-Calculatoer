@@ -4,7 +4,7 @@
         if (typeof google !== 'undefined') return;
 
         const script = document.createElement('script');
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBq3u-wvCxlQ4YR7G0usooz8nqbWtPz3Ig&libraries=places&callback=initMap";
+        script.src = "";
         script.async = true;
         script.defer = true;
 
